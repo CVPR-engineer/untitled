@@ -1,0 +1,43 @@
+<!--实现的效果:动画,一个小div从一端移动到另外一端
+2.实现缩放效果
+3.实现队列功能
+4.不断修改样式
+5.改变div里面的字体大小-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script  type="text/javascript"  src="jquery/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("div").animate({
+                //     left:'250px',
+                //     opacity:'0.5',
+                //     height:'+=150px',
+                //     width:'+=180px'
+                var div=$("div");
+                // div.animate({height:'300px',opacity:'0.4'},"slow");
+                // div.animate({width:'300px',opacity:'0.8'},"slow");
+                // div.animate({height:'100px',opacity:'0.4'},"slow");
+                // div.animate({width:'100px',opacity:'0.8'},"slow");
+
+                div.animate({left:'100px'},"slow");
+                div.animate({fontSize:'+=3em'},"slow")
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+<button>开始动画</button>
+<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。</p>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;">陈松
+</div>
+
+</body>
+</html>

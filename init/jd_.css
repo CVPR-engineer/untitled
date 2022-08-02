@@ -1,0 +1,56 @@
+/*
+作用:初始化页面元素,以及样式,根据元素选择器进行样式的改变,通过这个改变了页面
+很多样式,有一种聚合的感觉
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+em,i {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+button,
+input {
+    font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+
+}
+body {
+    -webkit-font-smoothing:antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    color: #666;
+}
+.hide,.none {
+    display: none;
+}
+/* 伪元素清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+.clearfix {
+    *zoom: 1
+}
